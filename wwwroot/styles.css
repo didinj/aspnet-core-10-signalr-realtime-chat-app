@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  background: #0b0f19;
+  color: #e6e8ee;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.status {
+  margin-left: auto;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1rem;
+}
+.controls input {
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27304a;
+  background: #0f1526;
+  color: #e6e8ee;
+}
+.controls button {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27304a;
+  background: #1a2240;
+  color: #e6e8ee;
+  cursor: pointer;
+}
+.controls button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.presence {
+  margin: 1rem 0;
+}
+.presence ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.presence li {
+  background: #121a33;
+  border: 1px solid #27304a;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.8rem;
+}
+.chat {
+  border: 1px solid #27304a;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #0f1526;
+}
+.messages {
+  height: 50vh;
+  overflow: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.msg {
+  background: #121a33;
+  border: 1px solid #27304a;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.7rem;
+}
+.msg small {
+  opacity: 0.65;
+}
+.typing {
+  min-height: 1.2rem;
+  font-style: italic;
+  opacity: 0.8;
+  padding: 0 1rem;
+}
+.composer {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  border-top: 1px solid #27304a;
+  background: #0b0f19;
+}
+.composer input {
+  flex: 1;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27304a;
+  background: #0f1526;
+  color: #e6e8ee;
+}
+.composer button {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid #27304a;
+  background: #1a2240;
+  color: #e6e8ee;
+}

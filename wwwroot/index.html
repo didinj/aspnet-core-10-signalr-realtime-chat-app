@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASP.NET Core 10 + SignalR Chat</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- SignalR client via CDN -->
+    <script
+      defer
+      src="https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.min.js"
+    ></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>SignalR Chat</h1>
+        <div class="status" id="status">disconnected</div>
+      </header>
+
+      <section class="controls">
+        <input id="username" placeholder="Pick a username" />
+        <input id="room" placeholder="Room name (optional)" />
+        <button id="connectBtn">Connect</button>
+        <button id="joinBtn" disabled>Join Room</button>
+        <button id="leaveBtn" disabled>Leave Room</button>
+      </section>
+
+      <section class="presence">
+        <h3>Online</h3>
+        <ul id="users"></ul>
+      </section>
+
+      <section class="chat">
+        <div id="messages" class="messages"></div>
+        <div class="typing" id="typing"></div>
+        <div class="composer">
+          <input id="message" placeholder="Type a message…" disabled />
+          <button id="sendBtn" disabled>Send</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
